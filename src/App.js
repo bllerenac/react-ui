@@ -1,10 +1,9 @@
+import React from 'react';
+import Main from "./components/assets/Main";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
+const App = () => {
+  return  (
+    <Main />
   );
 }
 
