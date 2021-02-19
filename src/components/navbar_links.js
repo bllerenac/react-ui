@@ -1,16 +1,18 @@
 import "../stylesheets/navbar_links.css"
+import { store } from "./../store";
 
-const Navbar__links = () => {
-  return (
+const Navbar__links = () => (
     <navbar className="navbar__links">
         <ul className= "links">
-          {/* <!-- Esto se cambia por la info del store.js --> */}
-            <li className="navbar-item">Inicio</li>
-            <li className="navbar-item selected">Hoy</li>
-            <li className="navbar-item">Siguiendo</li> 
+          { store.links.map((element) => {
+            const elementSelected = element.selected ? "selected" : "";
+            return (
+             <li key={element.name} className= {`navbar-item ${elementSelected}`}>
+               {element.name}
+             </li>);
+          })}
         </ul>
     </navbar>
-  );
-};
+);
 
 export default Navbar__links
