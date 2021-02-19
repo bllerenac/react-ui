@@ -1,8 +1,10 @@
 import React from 'react';
-
+import Sections from "./Sections.js";
 const Main = () => {
   return (
-  <p>Hola mundo</p>
+    <main>
+      <Sections />
+    </main>
   );
 }
 
