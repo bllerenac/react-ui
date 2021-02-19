@@ -1,4 +1,4 @@
-const store = {
+const STORE = {
   links: [
     { name: "Inicio", selected: false },
     { name: "Hoy", selected: true },
