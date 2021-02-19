@@ -1,4 +1,9 @@
-const STORE = {
+const store = {
+  links: [
+    { name: "Inicio", selected: false },
+    { name: "Hoy", selected: true },
+    { name: "Siguiendo", selected: false },
+  ],
   cards: [
     {
       date: "18/02/2021",
