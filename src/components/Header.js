@@ -1,13 +1,14 @@
-import Navbar__links from "../components/navbar_links"
-import Navbar__icons from "../components/navbar_icons"
+import NavbarLinks from "../components/navbar_links";
+import NavbarSocial from "../components/navbar_icons";
+import SearchBar from "../components/Search";
 import "../stylesheets/header.css"
 
 const Header = () =>{
   return (
     <header className="header">
-      <Navbar__links />
-      {/* Search bar */}
-      <Navbar__icons />
+      <NavbarLinks />
+      <SearchBar />
+      <NavbarSocial />
     </header>
   );
 };

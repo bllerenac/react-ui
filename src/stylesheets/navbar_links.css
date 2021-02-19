@@ -4,10 +4,9 @@
   margin: 0;
 }
 
-.header{
-  height: 83px;
-  border: 1px solid black;
-  background: #FFFFFF;
+.navbar__links{
+  height: 51px;
+  width: 20%;
 }
 
 .links{
