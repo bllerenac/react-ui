@@ -1,0 +1,11 @@
+.navbar_icons{
+  display: flex;
+  gap: 20px;
+}
+.navbar__icon{
+  font-size: 24px;
+  color: #000000;
+}
+.navbar__icon:hover{
+  opacity: 0.5;
+}
