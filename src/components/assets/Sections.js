@@ -14,7 +14,9 @@ const Sections = () => {
                 date_1.map(card =>{
                   return(
                     <article key={`card-${card.id}`} className={`card card-${card.id}`}>
-                      <img src={card.img} />
+                      <div className={"card__img_conatiner"}>
+                        <img src={card.img} />
+                      </div>
                       <div className={"card_content"}>
                         <h3>{card.tittle}</h3>
                         <h1>{card.description}</h1>
@@ -32,7 +34,9 @@ const Sections = () => {
               date_2.map(card =>{
                 return(
                   <article key={`card-${card.id}`} className={`card card-${card.id}`}>
-                    <img src={card.img} />
+                    <div className={"card__img_conatiner"}>
+                      <img src={card.img} />
+                    </div>
                     <div className={"card_content"}>
                       <h3>{card.tittle}</h3>
                       <h1>{card.description}</h1>

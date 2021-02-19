@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 55px;
 }
 
 .main__title{
@@ -25,12 +26,22 @@
   gap: 32px;
 }
 .card{
+  display: table;
   position: relative;
   width: 100%;
   height: 100%;
 }
+    .card__img_conatiner{
+      display: flex;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(17, 17, 17, 0.6) 100%);
+      border-radius: 24px;
+      width: 100%;
+      height: 100%;
+    }
     .card img{
-      width: 400px;
+      position:relative;
+      z-index:-1;
+      width: 100%;
       border-radius: 24px;
     }
 
@@ -46,11 +57,12 @@
   bottom: 0;
   margin-bottom: 20px;
   color: white;
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-weight: bold;
 }
     .card_content h1{
       text-align: center;
+      padding: 0px 33px;
       font-size: 28px;
       line-height: 33px;
     }
