@@ -1,5 +1,5 @@
 import React from 'react';
-import store from "../../store_test"
+import store from "../../store"
 import "../../stylesheets/sections.css"
 
 const Sections = () => {
