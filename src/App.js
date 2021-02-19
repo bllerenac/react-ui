@@ -1,9 +1,13 @@
-import React from 'react';
-import Main from "./components/assets/Main";
+import React from "react";
+import Header from "./components/Header"
+import Main from "./components/assets/Main"
 
-const App = () => {
-  return  (
-    <Main />
+function App() {
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
   );
 }
 
