@@ -1,8 +1,8 @@
 import "../stylesheets/navbar_links.css"
 import STORE from "./../store";
 
-const Navbar__links = () => (
-    <navbar className="navbar__links">
+const NavbarLinks = () => (
+    <div className="navbar__links">
         <ul className= "links">
           { STORE.links.map((element) => {
             const elementSelected = element.selected ? "selected" : "";
@@ -12,7 +12,7 @@ const Navbar__links = () => (
              </li>);
           })}
         </ul>
-    </navbar>
+    </div>
 );
 
-export default Navbar__links
+export default NavbarLinks
